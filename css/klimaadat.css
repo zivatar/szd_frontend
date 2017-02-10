@@ -1,0 +1,51 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+div#google_map {
+	/*width:20vw;
+    height: 20vw;*/
+	/*height: 300px;*/
+	/*width: 30%;
+	padding-top: 30%;*/
+	padding-top: 30%;
+	background-color: silver;
+	border: 1px solid black;
+
+}
+
+@media (max-width: 767px) {
+	div#google_map {
+		padding-top: 100%;
+	}
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+div.carousel-inner {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*
+COLORS
+https://designschool.canva.com/wp-content/uploads/sites/2/cache/2016/01/Palette_1/Palette_1-662x382.jpg
+*/
+
+div.header {
+	padding: 10px;
+
+}
+
+body {
+
+}
+
+div.panel.panel-primary, div.jumbotron {
+	background-color: #DDD;
+	border: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

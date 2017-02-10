@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- BOOTSTRAP +++++++++++++++++++++++++++++ -->
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<link href="css/jumbotron-narrow.css" rel="stylesheet">
+	<!-- /BOOTSTRAP +++++++++++++++++++++++++++++ -->
+	
+	<!-- FONTS ++++++++++++++++++++++++++++++++++ -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- /FONTS +++++++++++++++++++++++++++++++++ -->
+	
+	<!-- CSS FILES ++++++++++++++++++++++++++++++ -->
+	<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" /> <!-- https://ghinda.net/css-toggle-switch/bootstrap.html -->
+	<link href="css/klimaadat.css" rel="stylesheet">
+	<!-- /CSS FILES +++++++++++++++++++++++++++++ -->
+</head>
+<body>
+	
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Főoldal</a></li>
+            <li role="presentation"><a href="#">Belépés</a></li>
+            <li role="presentation"><a href="#">Adatok</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Zivatar.hu Éghajlati Adatbázis</h3>
+      </div>
+	  
+	  <div class="container">
+	  
+	  <hr>
+	  <h1>Főoldal</h1>
+	  <hr>
+
+      <div class="jumbotron">
+        <h1>Időjárás adatok</h1>
+        
+		<!-- CAROUSEL ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/1.jpg" alt="Chania">
+      <!--<div class="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>-->
+    </div>
+
+    <div class="item">
+      <img src="img/2.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="img/3.jpg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="img/4.jpg" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+		<!-- /CAROUSEL +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Mérőhelyek</h4>
+          <p><strong>Hol mérsz?</strong> Saját mérőhelyek felvitele, módosítása, törlése.</p>
+
+          <h4>Mérőműszerek</h4>
+          <p><strong>Mivel mérsz?</strong> Saját mérőműszerek rögzítése, lezárása.</p>
+
+          <h4>Éghajlati adatok rögzítése</h4>
+          <p><strong>Mit mértél? Mit láttál?</strong> Éghajlati napló vezetése. Aktuális és összefoglaló adatok feltöltése.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Éghajlati adatok lekérése</h4>
+          <p>Az összegyűjtött adatok lekérése egy kiválasztott helyre és időtartamra. Havi és éves statisztikák készítése, ha rendelkezésre állnak a megfelelő adatok. Ábrák és grafikonok.</p>
+
+          <h4>Észlelési segédlet</h4>
+          <p>Segédlet az adatok rögzítéséhez és értelmezéséhez.</p>
+
+        </div>
+      </div>
+	  
+	  <hr>
+	  <h1>Saját mérőhelyek</h1>
+	  
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">Rákoscsaba</a></li>
+			<li role="presentation"><a href="#">Újpest</a></li>
+			<li role="presentation"><a href="#">+1</a></li>
+		</ul>
+	  
+	  <div class="panel panel-primary">
+	  <div class="panel-body"><form>
+		<div id="google_map" class="col-12 col-sm-4"></div>
+		
+        <div class="col-sm-2">
+			<label class="checkbox-inline"><input type="checkbox" checked data-toggle="toggle">Aktív</label>
+			<label class="checkbox-inline"><input type="checkbox" checked data-toggle="toggle">Publikus</label>
+		</div>
+		
+		<div class="col-sm-6">
+			
+				<div class="form-group">
+					<label for="megnevezes">Megnevezés:</label>
+						<input type="email" class="form-control" id="megnevezes" placeholder="Pl. Kékestető, kilátó">
+				</div>
+				<div class="form-group">
+					<label for="kornyezet">Tágabb környezet:</label>
+					<select class="form-control" id="exampleSelect1">
+						<option>Belváros</option>
+						<option>Lakótelep</option>
+						<option>Vízpart</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="kornyezet">Szűkebb környezet:</label>
+					<select class="form-control" id="exampleSelect1">
+						<option>Udvar</option>
+						<option>Kert</option>
+						<option>Parkoló</option>
+					</select>
+				</div>
+		</div>
+		
+		<div class="col-12">
+			<div class="form-group">
+				<label for="comment">Megjegyzés:</label>
+				<textarea class="form-control" rows="5" id="comment" placeholder="Pl. 3 emeletes ház lapos tetején találhatóak a műszerek. A kilátás kiváló a Budai-hegység irányában."></textarea>
+			</div>
+		</div>
+		
+		<div class="col-12 visible-lg visible-md">
+			<div class="btn-group btn-group-justified">
+				<a href="#" class="btn btn-success">Módosítások mentése</a>
+				<a href="#" class="btn btn-default">Fényképek feltöltése</a>
+				<a href="#" class="btn btn-default">Módosítások elvetése</a>
+				<a href="#" class="btn btn-danger">Mérőhely törlése</a>
+			</div>
+		</div>
+		
+		<div class="col-12 visible-xs visible-sm">
+			<div class="btn-group btn-group-vertical">
+				<a href="#" class="btn btn-success">Módosítások mentése</a>
+				<a href="#" class="btn btn-default">Fényképek feltöltése</a>
+				<a href="#" class="btn btn-default">Módosítások elvetése</a>
+				<a href="#" class="btn btn-danger">Mérőhely törlése</a>
+			</div>
+		</div>
+		
+		<!--
+		<div class="col-12">
+			<label class="switch-light" onclick="">
+				<input type="checkbox">
+				<strong class="col-sm-4">Aktív</strong>
+				<span class="progress col-sm-8"><span>Off</span><span>On</span><a class="progress-bar"></a></span>
+			</label>
+		</div>
+		-->
+	
+		</form></div>
+      </div>
+	  
+	  <hr>
+	  
+	  <h1>Saját mérőműszerek</h1>
+	  
+	  <hr>
+	  
+	  <h1>Mért adatok feltöltése</h1>
+	  
+	  <div class="panel panel-primary">
+	  <div class="panel-body"><form>
+			<div class="form-group">
+					<label for="kornyezet">Mérőhely neve:</label>
+					<select class="form-control" id="exampleSelect1">
+						<option>Rákoscsaba</option>
+						<option>Lakótelep</option>
+						<option>Vízpart</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="kornyezet">Mérőműszer neve:</label>
+					<select class="form-control" id="exampleSelect1">
+						<option>WS-2800</option>
+						<option>Kert</option>
+						<option>Parkoló</option>
+					</select>
+				</div>
+				<div class="col-12">
+					<label class="checkbox-inline"><input type="checkbox" checked data-toggle="toggle">UTC időzóna használata</label>
+					<label class="checkbox-inline"><input type="checkbox" checked data-toggle="toggle">Tizedespont használata</label>
+				</div>
+				<div class="col-12">
+			<div class="btn-group">
+				<a href="#" class="btn btn-success"><span class="glyphicon glyphicon-upload"></span> Adatfile feltöltése</a>
+			</div>
+		</div>
+				
+		</form>
+	  </div>
+	  </div>
+	  
+	  <hr>
+	  
+	  <h1>Analóg műszerek és vizuális észlelések</h1>
+	  
+	  <div class="panel panel-primary">
+	  <div class="panel-body">
+	  <div class="col-12" style="height:130px;">
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker10'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker10').datetimepicker({
+                viewMode: 'years',
+                format: 'MM/YYYY'
+            });
+        });
+    </script>
+	<table class="table table-striped">
+		<tr>
+			<td>Nap</td>
+			<td>Tmin</td>
+			<td>Tmax</td>
+			<td>Csapadék</td>
+			<td>Szignifikáns jelenségek</td>
+		</tr>
+	</table>
+	
+	</div>
+	  </div>
+	  
+	  <hr>
+	  
+	  <h1>Aktuális időjárás</h1>
+
+      <footer class="footer">
+        <p>Lernerné Lelovics Enikő Alexandra, zivatar.hu</p>
+      </footer>
+
+    </div> <!-- /container -->
+	
+	<script>
+var marker;
+
+function myMap() {
+  var mapCanvas = document.getElementById("google_map");
+  var mapOptions = {
+    center: new google.maps.LatLng(47.6, 19.0),
+    zoom: 8,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  google.maps.event.addListener(map,'click',function(event) {
+  	var location = event.latLng;
+  	if(!marker) { marker = new google.maps.Marker({ position: location, map: map }); }
+  	else {marker.setPosition(location)}
+  	document.getElementById("lat").value = location.lat();
+  	document.getElementById("lon").value = location.lng();
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT8nqIVYJhuI5INrAwkzYMzEBAOIhKt60&callback=myMap"></script>
+
+
+</body>
+</html>
